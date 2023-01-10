@@ -6,3 +6,7 @@ body{
 #route {
     margin-top: -3em;
 }
+
+button {
+    width: 14em;
+}
