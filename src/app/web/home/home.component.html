@@ -1,1 +1,8 @@
-<p>home works!</p>
+<section>
+<h3>COMPONENTE PADRE</h3>
+<input type="text" class="form-control mt-4 text-center" #input (keyup)="0">
+
+<div class="p-4">
+<app-hijo [texto1]="input.value"></app-hijo></div>
+</section>
+

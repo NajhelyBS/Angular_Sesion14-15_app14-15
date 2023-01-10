@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  texto1  = "";
+
+  
 }

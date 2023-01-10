@@ -12,6 +12,10 @@ import { HijoComponent } from './hijo/hijo.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    NavbarComponent,
+    HijoComponent,
   ]
 })
 export class ComponentsModule { }
