@@ -1,25 +1,49 @@
-<body>
-  <div class="p-5">
+<body class="pb-5">
     <app-navbar></app-navbar>
-  </div>
-  <div class="p-5" id="route">
-    <router-outlet></router-outlet>
+    <div id="sub">
+      <h3 id="subtitle">App-14:</h3>
+    </div>
+    <div id="route" class="pb-5">
+      <router-outlet></router-outlet>
+    </div>
+
+  <app-navbar></app-navbar>
+  <div id="sub">
+    <h3 id="subtitle">App-15:</h3>
   </div>
 
-  <div class="p-5">
+  <div id="route">
     <h1>{{titulo}}</h1>
     
     <hr>
 
     <div class="mt-3">
-    <h5>Event Binding</h5>
+    <h5 style="color: rgb(14, 22, 100);">Event Binding</h5>
 
-    <app-event></app-event>
+    <button class="btn btn-primary mt-3 mb-3" (click)="Mostrar()">{{button}}</button>
     
-    <div>
-      <p>Event Binding, es el mecanismmo de data binding mediante el cual trabaja con los eventos que se encuentran en el DOM</p>
+    <div id="texto" class="mt-4 pb-2" *ngIf="mostrar">
+      <p id="parrafo">Event Binding, es el mecanismo de data binding mediante el cual trabaja con los eventos que se encuentran en el
+        DOM</p>
     </div>
+
+<hr>
+
+<div class="mt-3">
+  <h5 style="color: rgb(14, 22, 100);">Two way binding</h5></div>
+
+  <div class="row">
+    <div class="col-md-6 mt-4 " id="two" >
+      <p class="p-2">{{text}}</p>
+    </div>
+
+    <div class="col-md-6 mt-4">
+      <textarea name="" id="" cols="78" rows="5" [(ngModel)]="text"></textarea>
+    </div>
+
+  </div>
+
   </div>
   </div>
   
-  </body>
+  </body >

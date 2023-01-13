@@ -1,6 +1,22 @@
 section {
-    background-color: rgb(168, 139, 214);
+    background-color: rgba(217, 245, 250, 0.808);
     border: solid 2px;
     padding: 2em;
+    box-shadow: 0px 0px 4px 2px  rgb(14, 22, 100);
+
+}
+h3 {
+    color: rgb(14, 22, 100);
+}
+span {
+    font-weight: 600;
+    color:rgb(14, 22, 100) ;
 }
 
+p{
+    font-weight: 600
+}
+
+div {
+    height: auto;
+}
